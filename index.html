@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Hair Studio - Premium Barber Shop in Pune</title>
+    <meta name="description" content="Fashion Hair Studio by Arun Kumar in Pirangut, Pune. We offer premium hair cuts, beard styling, facials, and grooming packages.">
+    <meta name="keywords" content="barber shop, hair studio, haircut, beard trim, grooming, Arun Kumar, Pirangut, Pune, Lavale Phata">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Custom styles to enhance the theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark Gray */
+            color: #f3f4f6; /* Light Gray */
+        }
+        .bg-primary { background-color: #111827; }
+        .bg-secondary { background-color: #1f2937; }
+        .text-gold { color: #d4af37; }
+        .border-gold { border-color: #d4af37; }
+        .btn-gold {
+            background-color: #d4af37;
+            color: #111827;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        .btn-gold:hover {
+            background-color: #c09e2e;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.2);
+        }
+        .section-title {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+    </style>
+</head>
+<body class="bg-primary">
+
+    <!-- Header -->
+    <header class="bg-secondary sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gold">Fashion Hair Studio</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-gold transition">Home</a>
+                <a href="#services" class="text-gray-300 hover:text-gold transition">Services</a>
+                <a href="#packages" class="text-gray-300 hover:text-gold transition">Packages</a>
+                <a href="#about" class="text-gray-300 hover:text-gold transition">About</a>
+                <a href="#contact" class="text-gray-300 hover:text-gold transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-300 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-700">Home</a>
+            <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-700">Services</a>
+            <a href="#packages" class="block py-2 px-4 text-sm hover:bg-gray-700">Packages</a>
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/111827/f3f4f6?text=Fashion+Hair+Studio');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative z-10 px-4">
+                <h1 class="text-5xl md:text-7xl font-black text-white mb-4">STYLE. PRECISION. PERFECTION.</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Experience the art of grooming at Fashion Hair Studio, where classic techniques meet modern style.</p>
+                <a href="#contact" class="btn-gold py-3 px-8 rounded-lg text-lg">Book an Appointment</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-primary">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl text-center mb-2 text-gold">Our Services</h2>
+                <p class="text-center text-gray-400 mb-12">Crafted with care, just for you.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="card rounded-lg p-6 text-center">
+                        <div class="text-4xl text-gold mb-4"><i class="fas fa-cut"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Classic Haircut</h3>
+                        <p class="text-gray-400 mb-4">A sharp, stylish cut tailored to your preference, finished with a classic razor neck shave.</p>
+                        <p class="text-lg font-bold text-gold">₹200</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="card rounded-lg p-6 text-center">
+                        <div class="text-4xl text-gold mb-4"><i class="fas fa-user-ninja"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Beard Trim & Shape</h3>
+                        <p class="text-gray-400 mb-4">Expert sculpting and trimming to perfect your beard's shape, lined up with precision.</p>
+                        <p class="text-lg font-bold text-gold">₹150</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="card rounded-lg p-6 text-center">
+                        <div class="text-4xl text-gold mb-4"><i class="fas fa-soap"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Hot Towel Shave</h3>
+                        <p class="text-gray-400 mb-4">A traditional hot towel shave for the closest, smoothest finish. A truly relaxing experience.</p>
+                        <p class="text-lg font-bold text-gold">₹180</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="card rounded-lg p-6 text-center">
+                        <div class="text-4xl text-gold mb-4"><i class="fas fa-spa"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Head Massage</h3>
+                        <p class="text-gray-400 mb-4">A rejuvenating head massage to relieve stress and improve circulation.</p>
+                        <p class="text-lg font-bold text-gold">₹250</p>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="card rounded-lg p-6 text-center">
+                        <div class="text-4xl text-gold mb-4"><i class="fas fa-paint-brush"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Hair Coloring</h3>
+                        <p class="text-gray-400 mb-4">From subtle highlights to bold new colors, using premium quality products.</p>
+                        <p class="text-lg font-bold text-gold">Starts at ₹500</p>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="card rounded-lg p-6 text-center">
+                        <div class="text-4xl text-gold mb-4"><i class="fas fa-smile"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Cleansing Facial</h3>
+                        <p class="text-gray-400 mb-4">Deep cleansing facial to refresh your skin, remove impurities and leave you glowing.</p>
+                        <p class="text-lg font-bold text-gold">₹800</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="py-20 bg-secondary">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl text-center mb-2 text-gold">Grooming Packages</h2>
+                <p class="text-center text-gray-400 mb-12">Get the best value with our curated packages.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Package Card 1 -->
+                    <div class="card rounded-lg p-8 text-center border-2 border-gold shadow-xl">
+                        <h3 class="text-2xl font-bold mb-4">The Classic</h3>
+                        <p class="text-gray-400 mb-6">Haircut + Beard Trim</p>
+                        <p class="text-3xl font-bold text-gold mb-6">₹300 <span class="text-lg text-gray-400 line-through">₹350</span></p>
+                        <a href="#contact" class="btn-gold py-2 px-6 rounded-lg">Book Now</a>
+                    </div>
+                    <!-- Package Card 2 -->
+                    <div class="card rounded-lg p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-4">The Gentleman</h3>
+                        <p class="text-gray-400 mb-6">Haircut + Hot Towel Shave</p>
+                        <p class="text-3xl font-bold text-gold mb-6">₹350 <span class="text-lg text-gray-400 line-through">₹380</span></p>
+                        <a href="#contact" class="btn-gold py-2 px-6 rounded-lg">Book Now</a>
+                    </div>
+                    <!-- Package Card 3 -->
+                    <div class="card rounded-lg p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-4">The Royal Treatment</h3>
+                        <p class="text-gray-400 mb-6">Haircut + Beard Trim + Facial</p>
+                        <p class="text-3xl font-bold text-gold mb-6">₹1100 <span class="text-lg text-gray-400 line-through">₹1250</span></p>
+                        <a href="#contact" class="btn-gold py-2 px-6 rounded-lg">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-primary">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x600/1f2937/d4af37?text=Arun+Kumar" alt="Owner Arun Kumar" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h2 class="section-title text-3xl mb-4 text-gold">Meet The Owner</h2>
+                        <h3 class="text-4xl font-bold text-white mb-4">Arun Kumar</h3>
+                        <p class="text-gray-400 mb-4 leading-relaxed">
+                            With over 15 years of experience in the art of barbering, Arun Kumar founded Fashion Hair Studio with a simple vision: to create a space where men can enjoy premium grooming services in a relaxed and friendly atmosphere. His passion for precision and dedication to his craft are evident in every cut and shave.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed">
+                            Arun believes that a good haircut is more than just a routine—it's a boost of confidence. He personally trains his team to ensure the highest standards of quality and customer satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-secondary">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-3xl text-center mb-12 text-gold">Visit Us</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Contact Info -->
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Contact Details</h3>
+                        <div class="space-y-4 text-lg">
+                            <p class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-gold w-6 mr-3"></i>
+                                <span>Fashion Hair Studio, Near Lavale Phata, Pirangut, Pune, Maharashtra</span>
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-phone text-gold w-6 mr-3"></i>
+                                <a href="tel:+910000000000" class="hover:text-gold">+91 98765 43210</a>
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fas fa-envelope text-gold w-6 mr-3"></i>
+                                <a href="mailto:contact@fashionhairstudio.com" class="hover:text-gold">contact@fashionhairstudio.com</a>
+                            </p>
+                        </div>
+                        <h3 class="text-2xl font-semibold mt-8 mb-4">Business Hours</h3>
+                        <div class="space-y-2">
+                            <p><strong>Monday - Friday:</strong> 9:00 AM - 9:00 PM</p>
+                            <p><strong>Saturday - Sunday:</strong> 8:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    <!-- Map -->
+                    <div>
+                        <iframe 
+                            class="w-full h-80 rounded-lg shadow-lg border-2 border-gold"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.136453856885!2d73.7054703148927!3d18.5228519874075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb6a2e52e5d7%3A0x2e5d6e5f1b4a3b2!2sLavale%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1678886453123!5m2!1sen!2sin" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 text-center text-gray-400">
+        <div class="container mx-auto px-6">
+            <div class="mb-4">
+                <a href="#" class="text-gray-400 hover:text-gold mx-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-gold mx-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-gold mx-3"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2024 Fashion Hair Studio. All Rights Reserved.</p>
+            <p>Designed with <i class="fas fa-heart text-gold"></i> in Pune</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
